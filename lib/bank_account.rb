@@ -16,6 +16,18 @@ def deposit
   
 end
 
+def display_balance
+  
+  
+end 
+
+def valid? 
+  
+  
+end 
+
+
+
 
 
 end
