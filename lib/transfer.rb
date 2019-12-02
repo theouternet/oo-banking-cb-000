@@ -20,8 +20,8 @@ def valid?
 end
 
 def execute_transaction(amount)
-  @receiver.balance = (@receiver.balance + amount)
-  @sender.balance = (@sender.balance - amount)
+  @receiver.balance == (@receiver.balance + amount)
+  @sender.balance == (@sender.balance - amount)
 
 
 end 
