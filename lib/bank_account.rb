@@ -22,8 +22,9 @@ def display_balance
 end 
 
 def valid? 
-  
-  
+  if self.status = "open" & self.balance > 1000
+    return "valid"
+  end 
 end 
 
 def close_account
