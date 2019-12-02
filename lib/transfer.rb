@@ -10,7 +10,14 @@ def initialize(sender, receiver, status="pending", amount=50)
   @status = status
   @sender = sender
   @receiver = receiver
+end
 
+def valid?
+  if @sender.valid? == true && @receiver.valid? == true 
+    true 
+  else false 
+  end 
+end
 
 
 end
