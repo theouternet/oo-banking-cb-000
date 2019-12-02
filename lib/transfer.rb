@@ -33,7 +33,7 @@ end
 end 
 
 def reverse_transfer
-  if self.status = "complete" && valid? && @reciever.balance > amount
+  if self.status = "complete" && valid? && @receiver.balance > amount
   @receiver.balance = (@receiver.balance - amount)
   @sender.balance = (@sender.balance + amount)
   @status = "reversed"
