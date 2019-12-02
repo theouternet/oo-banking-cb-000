@@ -23,7 +23,7 @@ end
 
 def valid? 
   if self.status = "open" and self.balance > 1000
-    return "valid"
+    return true
   end 
 end 
 
