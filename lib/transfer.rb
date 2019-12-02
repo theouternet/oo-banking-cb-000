@@ -25,6 +25,7 @@ def execute_transaction
   @sender.balance = (@sender.balance - amount)
     @status = "complete"
 else "Transaction rejected. Please check your account balance."
+  @status = "rejected"
 end 
 end 
 
