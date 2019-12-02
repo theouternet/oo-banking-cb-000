@@ -22,7 +22,7 @@ def display_balance
 end 
 
 def valid? 
-  if self.status = "open" and self.balance > 1000
+  if self.status = "open" and self.balance > 0
     return true
   end 
 end 
