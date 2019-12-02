@@ -4,9 +4,9 @@ attr_reader :name
 attr_accessor :balance, :open
 
 
-def initialize(name, balance=1000)
+def initialize(name, balance=1000, status="open")
   @name = name
-  self.status = "open"
+  @status = status
   @balance = balance
 end
 
