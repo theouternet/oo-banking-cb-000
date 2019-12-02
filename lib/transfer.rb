@@ -23,7 +23,7 @@ def execute_transaction
   if valid? && @sender.balance > amount && @status != "complete"
   @receiver.balance = (@receiver.balance + amount)
   @sender.balance = (@sender.balance - amount)
-    @status = "complete"
+    self.status = "complete"
 else 
   
   @status = "rejected"
