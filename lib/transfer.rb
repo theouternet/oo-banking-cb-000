@@ -19,7 +19,7 @@ def valid?
   end 
 end
 
-def execute_transaction(amount)
+def execute_transaction
   if @sender.balance > amount && @status != "complete"
   @receiver.balance = (@receiver.balance + amount)
   @sender.balance = (@sender.balance - amount)
