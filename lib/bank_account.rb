@@ -24,7 +24,7 @@ end
 def valid? 
   if self.status = "open" and self.balance > 0
     return true
-  else false
+  else return false
   end 
 end 
 
