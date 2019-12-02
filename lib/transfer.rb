@@ -5,7 +5,7 @@ attr_reader
 
 
 
-def initialize(sender, receiver, amount=50)
+def initialize(sender, receiver, amount)
   @amount = amount
   @status = "pending"
   @sender = sender
